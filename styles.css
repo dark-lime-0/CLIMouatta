@@ -10,7 +10,7 @@ body {
 
 /* Container Styles */
 #container {
-    max-width: 1100px; /* Maximum width of the container */
+    max-width: 1300px; /* Maximum width of the container */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Padding inside the container */
     border: 1px solid #444; /* Border for the container */
@@ -23,7 +23,7 @@ body {
 
 /* Terminal Styling */
 .terminal {
-    white-space: pre; /* Preserve whitespace formatting */
+    white-space: pre-wrap; /* Preserve whitespace formatting */
     font-size: 14px; /* Font size for terminal output */
     margin-bottom: 10px; /* Space between terminal content and input field */
 }
@@ -39,8 +39,9 @@ body {
 .prompt {
     color: #00ff00; /* Green color for the prompt */
     margin-right: 5px; /* Space between prompt and input */
-    font-size: 14px; /* Font size for the prompt */
-    font-family: monospace; /* Ensure prompt uses monospace font */
+    font-size: 16px; /* Font size for the prompt */
+    font-family: monospace; 
+  
 }
 
 /* Styling for the command input field */
@@ -88,6 +89,8 @@ input {
     color: #cccccc; /* Grey color for output text */
     font-family: monospace; /* Ensure output uses monospace font */
     font-size: 14px; /* Font size for output text */
+    white-space: pre-wrap; /* Wrap long lines */
+    word-wrap: break-word; /* Break long words */
 }
 
 /* Custom Font Styles */
@@ -119,4 +122,54 @@ input {
 .command {
     font-weight: bold; /* Makes the text bold */
     font-size: 16px; /* Increases the font size */
+}
+
+/* Output Scroll Styling */
+#output {
+    max-height: 500px; /* Set maximum height for the output */
+    overflow-y: auto;  /* Allow vertical scrolling */
+    white-space: pre-wrap; /* Preserve formatting */
+    font-family: monospace; /* Use monospace font for output */
+    color: #cccccc; /* Grey color for output text */
+}
+/* Centered Content Styling */
+.centered-content {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Align text to center */
+    height: 100%; /* Full height of the parent container */
+    font-family: monospace; /* Keep terminal font style */
+    color: #cccccc; /* Grey color for text */
+}
+
+/* Large Text Styling */
+.centered-content .title {
+    font-weight: bold;
+    font-size: 34px; /* Large font size for the title */
+    margin-bottom: 10px; /* Add spacing below the title */
+}
+
+/* Subtitle Styling */
+.centered-content .subtitle {
+    font-size: 18px;
+    margin-bottom: 15px; /* Space below subtitle */
+}
+
+/* Description Styling */
+.centered-content p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Link Styling */
+.centered-content a {
+    color: #00ff00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.centered-content a:hover {
+    text-decoration: underline; /* Add hover effect for links */
 }
