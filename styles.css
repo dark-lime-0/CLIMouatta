@@ -147,13 +147,13 @@ input {
 /* Large Text Styling */
 .centered-content .title {
     font-weight: bold;
-    font-size: 32px; /* Large font size for the title */
+    font-size: 36px; /* Large font size for the title */
     margin-bottom: 10px; /* Add spacing below the title */
 }
 
 /* Subtitle Styling */
 .centered-content .subtitle {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 15px; /* Space below subtitle */
 }
 
