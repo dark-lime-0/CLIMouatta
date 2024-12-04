@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    background-color: #000000; /* Dark background */
+    background-color: #122; /* Dark background */
     color: #ffffff; /* Default text color */
     font-family: monospace; /* Monospace font for terminal effect */
     padding: 20px; /* Padding for body */
@@ -10,13 +10,13 @@ body {
 
 /* Container Styles */
 #container {
-    max-width: 1100px; /* Maximum width of the container */
+    max-width: 1050px; /* Maximum width of the container */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Padding inside the container */
     border: 1px solid #444; /* Border for the container */
     border-radius: 5px; /* Rounded corners for the container */
-    background-color: #012; /* Background color for the container */
-    height: 650px; /* Fixed height for the container */
+    background-color: #000; /* Background color for the container */
+    height: 600px; /* Fixed height for the container */
     overflow-y: auto; /* Allow vertical scrolling */
     font-size: 13px; /* Font size for the container text */
 }
@@ -38,7 +38,7 @@ body {
 /* Prompt Styling */
 .prompt {
     color: #00ff00; /* Green color for the prompt */
-    margin-right: 5px; /* Space between prompt and input */
+    margin-right: 3px; /* Space between prompt and input */
     font-size: 15px; /* Font size for the prompt */
     font-family: monospace; 
   
@@ -95,7 +95,7 @@ input {
 
 /* Custom Font Styles */
 .heading {
-    font-size: 16px; /* Large font size for headings */
+    font-size: 15px; /* Large font size for headings */
     font-weight: bold; /* Bold text */
 }
 
@@ -121,7 +121,7 @@ input {
 /* Command Styling */
 .command {
     font-weight: bold; /* Makes the text bold */
-    font-size: 15px; /* Increases the font size */
+    font-size: 14px; /* Increases the font size */
 }
 
 /* Output Scroll Styling */
