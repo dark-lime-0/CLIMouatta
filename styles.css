@@ -1,69 +1,77 @@
+/* Global Styles */
 body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: monospace;
-    padding: 20px;
-    font-size: 14px;
-    margin: 0;
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* Default text color */
+    font-family: monospace; /* Monospace font for terminal effect */
+    padding: 20px; /* Padding for body */
+    font-size: 14px; /* Default font size for all text */
+    margin: 0; /* Ensure no default margins */
 }
 
+/* Container Styles */
 #container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #444;
-    border-radius: 5px;
-    background-color: #012;
-    height: 650px;
-    overflow-y: auto;
-    font-size: 13px;
+    max-width: 1100px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #444; /* Border for the container */
+    border-radius: 5px; /* Rounded corners for the container */
+    background-color: #012; /* Background color for the container */
+    height: 650px; /* Fixed height for the container */
+    overflow-y: auto; /* Allow vertical scrolling */
+    font-size: 13px; /* Font size for the container text */
 }
 
+/* Terminal Styling */
 .terminal {
-    white-space: pre-wrap;
-    font-size: 13px;
-    margin-bottom: 10px;
+    white-space: pre-wrap; /* Preserve whitespace formatting */
+    font-size: 13px; /* Font size for terminal output */
+    margin-bottom: 10px; /* Space between terminal content and input field */
 }
 
+/* Input container for the prompt and input */
 .input-container {
-    display: flex;
-    align-items: center;
-    position: relative;
+    display: flex; /* Flexbox layout for input container */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Position for absolute suggestions */
 }
 
+/* Prompt Styling */
 .prompt {
-    color: #00ff00;
-    margin-right: 5px;
-    font-size: 15px;
-    font-family: monospace;
+    color: #00ff00; /* Green color for the prompt */
+    margin-right: 5px; /* Space between prompt and input */
+    font-size: 15px; /* Font size for the prompt */
+    font-family: monospace; 
+  
 }
 
+/* Styling for the command input field */
 input {
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    flex-grow: 1;
-    outline: none;
-    font-size: 13px;
-    font-family: monospace;
-    padding: 5px;
+    background-color: transparent; /* Transparent background for input */
+    border: none; /* No border for input */
+    color: #ffffff; /* White text color for input */
+    flex-grow: 1; /* Allow input to grow */
+    outline: none; /* Remove outline on focus */
+    font-size: 13px; /* Font size for input text */
+    font-family: monospace; /* Ensure input uses monospace font */
+    padding: 5px; /* Add padding for a more comfortable typing experience */
 }
 
+/* Suggestions Dropdown */
 #suggestions {
     position: absolute;
-    top: 100%;
+    top: 100%; /* Place directly below the input field */
     left: 0;
     right: 0;
     background-color: #333;
     list-style: none;
     margin: 0;
     padding: 0;
-    max-height: 200px;
-    overflow-y: auto;
+    max-height: 200px; /* Limit the height of the suggestions */
+    overflow-y: auto; /* Allow scrolling */
     border: 1px solid #444;
     border-radius: 5px;
     z-index: 100;
-    display: none;
+    display: none; /* Hide by default */
 }
 
 #suggestions li {
@@ -73,81 +81,89 @@ input {
 }
 
 #suggestions li:hover {
-    background-color: #444;
+    background-color: #444; /* Hover effect for suggestions */
 }
 
+/* Styling for terminal output */
 .output {
-    color: #cccccc;
-    font-family: monospace;
-    font-size: 13px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    color: #cccccc; /* Grey color for output text */
+    font-family: monospace; /* Ensure output uses monospace font */
+    font-size: 13px; /* Font size for output text */
+    white-space: pre-wrap; /* Wrap long lines */
+    word-wrap: break-word; /* Break long words */
 }
 
+/* Custom Font Styles */
 .heading {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 16px; /* Large font size for headings */
+    font-weight: bold; /* Bold text */
 }
 
 .subheading {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 14px; /* Medium font size for subheadings */
+    font-weight: bold; /* Bold text */
 }
 
 .text {
-    font-size: 14px;
+    font-size: 14px; /* Smaller font size for regular text */
 }
 
 .link {
-    color: #00ff00;
-    font-weight: bold;
+    color: #00ff00; /* Green color for links */
+    font-weight: bold; /* Bold text */
 }
 
 .error {
-    color: #ff0000;
-    font-weight: bold;
+    color: #ff0000; /* Red color for errors */
+    font-weight: bold; /* Bold text */
 }
 
+/* Command Styling */
 .command {
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: bold; /* Makes the text bold */
+    font-size: 15px; /* Increases the font size */
 }
 
+/* Output Scroll Styling */
 #output {
-    max-height: 500px;
-    overflow-y: auto;
-    white-space: pre-wrap;
-    font-family: monospace;
-    color: #cccccc;
+    max-height: 500px; /* Set maximum height for the output */
+    overflow-y: auto;  /* Allow vertical scrolling */
+    white-space: pre-wrap; /* Preserve formatting */
+    font-family: monospace; /* Use monospace font for output */
+    color: #cccccc; /* Grey color for output text */
 }
-
+/* Centered Content Styling */
 .centered-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    font-family: monospace;
-    color: #cccccc;
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Align text to center */
+    height: 100%; /* Full height of the parent container */
+    font-family: monospace; /* Keep terminal font style */
+    color: #cccccc; /* Grey color for text */
 }
 
+/* Large Text Styling */
 .centered-content .title {
     font-weight: bold;
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 32px; /* Large font size for the title */
+    margin-bottom: 10px; /* Add spacing below the title */
 }
 
+/* Subtitle Styling */
 .centered-content .subtitle {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Space below subtitle */
 }
 
+/* Description Styling */
 .centered-content p {
     font-size: 13px;
     margin-top: 15px;
 }
 
+/* Link Styling */
 .centered-content a {
     color: #00ff00;
     font-weight: bold;
@@ -155,15 +171,13 @@ input {
 }
 
 .centered-content a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Add hover effect for links */
 }
-
 .suggestions li.highlighted {
-    background-color: #007bff;
-    color: white;
+  background-color: #007bff;
+  color: white;
 }
-
 .highlighted {
-    background-color: #b3e0ff;
-    color: #000;
+  background-color: #b3e0ff; /* Light blue background for selected suggestion */
+  color: #000; /* Dark text color */
 }
